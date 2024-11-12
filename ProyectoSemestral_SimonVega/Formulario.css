@@ -1,0 +1,123 @@
+body {
+    font-family: 'Times New Roman', Times, serif;
+    color: white;
+    background: url('Formulario.png') no-repeat center center/cover;
+    height: 100vh;
+    position: relative;
+}
+.overlay {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(10, 10, 10, 0.5); /* Capa oscura con 50% de opacidad */
+    pointer-events: none; /* Permite hacer clic en los elementos debajo */
+    z-index: -1; /* Mantiene el overlay detrás del contenido */
+}
+
+.form-container {
+    width: 400px;
+    background: linear-gradient(#21212179, #21212177) padding-box,
+                linear-gradient(145deg, transparent 35%,#0000007c, #00000064) border-box;
+    border: 4px solid transparent;
+    padding: 42px 40px;
+    font-size: 20px;
+    font-family: 'Times New Roman', Times, serif;
+    color: rgb(255, 255, 255);
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+    box-sizing: border-box;
+    border-radius: 16px;
+    position: absolute;
+    top: 25%;
+    left: 35%;
+  }
+  
+  .form-container button:active {
+    scale: 0.95;
+  }
+  
+  .form-container .form {
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+  }
+  
+  .form-container .form-group {
+    display: flex;
+    flex-direction: column;
+    gap: 2px;
+  }
+  
+  .form-container .form-group label {
+    display: block;
+    margin-bottom: 5px;
+    color: #ffffff;
+    font-weight: 600;
+    font-size: 12px;
+    font-family: 'Times New Roman', Times, serif;
+  }
+  
+  .form-container .form-group input {
+    width: 100%;
+    padding: 12px 16px;
+    border-radius: 8px;
+    color: #fff;
+    font-family: 'Times New Roman', Times, serif;
+    background-color: transparent;
+    border: 1px solid #ffffff;
+  }
+  
+  .form-container .form-group textarea {
+    width: 100%;
+    padding: 12px 16px;
+    border-radius: 8px;
+    resize: none;
+    color: #fff;
+    height: 96px;
+    border: 1px solid #ffffff;
+    background-color: transparent;
+    font-family: 'Times New Roman', Times, serif;
+  }
+  
+  .form-container .form-group input::placeholder {
+    opacity: 0.5;
+  }
+  
+  .form-container .form-group input:focus {
+    outline: none;
+    border-color: #000000;
+  }
+  
+  .form-container .form-group textarea:focus {
+    outline: none;
+    border-color: #000000f9;
+  }
+  
+  .form-container .form-submit-btn {
+    display: flex;
+    align-items: flex-start;
+    justify-content: center;
+    align-self: flex-start;
+    font-family:'Times New Roman', Times, serif;
+    color: #ffffff;
+    font-weight: 600;
+    width: 40%;
+    background: #313131;
+    border: 1px solid #414141;
+    padding: 12px 16px;
+    font-size: inherit;
+    gap: 8px;
+    margin-top: 8px;
+    cursor: pointer;
+    border-radius: 6px;
+  }
+  
+  .form-container .form-submit-btn:hover {
+    background-color: #fff;
+    border-color: #fff;
+  }
+  
+  

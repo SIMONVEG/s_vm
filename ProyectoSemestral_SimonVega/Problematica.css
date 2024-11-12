@@ -1,0 +1,197 @@
+body {
+    font-family: 'Times New Roman', Times, serif;
+    color: white;
+    background: url('Problematica.png') no-repeat center center/cover;
+    height: 100vh;
+    position: relative;
+}
+.overlay {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(10, 10, 10, 0.5); /* Capa oscura con 50% de opacidad */
+    pointer-events: none; /* Permite hacer clic en los elementos debajo */
+    z-index: -1; /* Mantiene el overlay detrás del contenido */
+}
+/* Estilos para la barra de navegación */
+.h1 {
+    position: absolute;
+    top: 25%;
+    left: 63.5%;
+    transform: translate(-50%, -50%);
+    color: white;
+    text-align: center;
+    font-family: 'Times New Roman', Times, serif;
+    font-size: 2vw; /* Tamaño del texto adaptable al ancho de la ventana */
+    z-index: 1;
+}
+.p {
+    position: absolute;
+    top: 50%;
+    left: 69.7%;
+    transform: translate(-50%, -50%);
+    color: white;
+    text-align: justify;
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 18px; /* Tamaño del texto adaptable al ancho de la ventana */
+    z-index: 1;
+}
+.section {
+    position: absolute;
+    top: 100%;
+    left: 0%;
+    color: white;
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 18px; /* Tamaño del texto adaptable al ancho de la ventana */
+    z-index: 1;
+}
+
+.navbar  {
+    display: flex;
+    justify-content: center; /* Centra horizontalmente el contenido */
+    align-items: center;
+    padding: 3em 0em;
+    background-color: rgba(0, 0, 0, 0.363); /* Barra con transparencia */
+    position: absolute;
+    top: 0cm; /* Baja la barra de navegación 3 cm desde la parte superior */
+    width: 100%;
+    /* Asegura que la barra de navegación esté por encima del fondo */
+}
+
+.navbar-logo {
+    font-size: 1.5em;
+    font-weight: bold;
+    margin-right: 2em; /* Espacio entre el logo y los enlaces */
+    color: white;
+}
+
+.navbar-links {
+    list-style: none;
+    display: flex;
+}
+
+.navbar-links li {
+    margin-left: 1.5em;
+}
+
+.navbar-links a {
+    text-decoration: none;
+    color: white;
+    font-size: 1em;
+    transition: color 0.3s;
+}
+
+.navbar-links a:hover {
+    color: #006af5; /* Cambia a un color más claro al pasar el cursor */
+}
+
+
+
+
+
+button {
+    background-color: #28a745;
+    color: white;
+    padding: 10px 20px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+button:hover {
+    background-color: #218838;
+}
+
+.custom-footer {
+    background-color: #00000079;
+    color: white;
+    padding: 20px;
+    font-size: 1vw;
+    font-family: 'Times New Roman', Times, serif;
+    text-align: center;
+}
+
+.footer-container {
+    display: flex;
+    justify-content: space-around;
+    flex-wrap: wrap;
+}
+
+.footer-section {
+    flex: 1;
+    padding: 10px;
+    min-width: 200px;
+}
+
+.footer-bottom {
+    margin-top: 20px;
+    font-size: 0.9em;
+    color: #ccc;
+}
+
+.footer-section ul {
+    list-style: none;
+    padding: 0;
+}
+
+.footer-section ul li {
+    margin: 0px 0;
+}
+
+.footer-section ul li a {
+    color: #ccc;
+    text-decoration: none;
+    transition: color 0.3s;
+}
+
+.footer-section ul li a:hover {
+    color: #b0c4de;
+}
+.footer {
+    position: absolute;
+    bottom: 0;
+}
+
+.floating-button {
+    position: absolute;
+    top: 75%;
+    left: 55%;
+    transform: translate(-50%, -50%);
+    opacity: 0;
+    animation: slideIn 1s ease-out forwards; /* Animación de entrada */
+}
+
+.floating-button button {
+    /* Degradado dorado a negro */
+    background-color: rgba(0, 0, 0, 0.644);
+    color: white;
+    font-family: 'Times New Roman', Times, serif;
+    padding: 22px 34px; /* Espaciado interno */
+    border: none;
+    border-radius: 30px; /* Bordes completamente redondeados */
+    font-size: 2vw; /* Tamaño de fuente */
+    font-weight: bold; /* Negrita */
+    cursor: pointer;
+    box-shadow: 0px 8px 15px rgba(0, 0, 0, 0.694); /* Sombra más prominente */
+    transition: transform 0.3s ease, box-shadow 0.3s ease; /* Transiciones suaves */
+}
+
+/* Efecto al pasar el ratón */
+.floating-button button:hover {
+    transform: translateY(-5px); /* Levanta el botón al pasar el ratón */
+    box-shadow: 0px 12px 20px rgb(0, 0, 0); /* Sombra más fuerte */
+}
+
+/* Animación de entrada */
+@keyframes slideIn {
+    0% {
+        opacity: 0;
+        transform: translateY(50px);
+    }
+    100% {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
